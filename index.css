@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    font-family: "smythe", sans-serif;
+}
+h1{
+    margin: 0;
+}
+.container{
+    width: 600px;
+    margin: auto;
+}
+
+/* Images */
+.title{
+    margin: 0;
+    padding: 0;
+    background-image: url(/bg-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 180px;  
+}
+
+/* Typography */ 
+
+.main-title{
+   font-family: "Smythe", sans-serif;
+   color: #FFFFFF;
+   font-size: 39px;
+   line-height: 24px;
+   font-weight: 400;
+   margin-left: 46px;
+   padding-top: 56px;
+   margin-bottom: 0px; 
+}
+
+.sub-title{ 
+    color: #FFFFFF;
+    font-family: Smythe;
+    font-size: 22.42px;
+    font-weight: 400;
+    line-height: 13.8px;
+    letter-spacing: 0%;
+    margin-left: 46px;
+    margin-top: 16px;
+}
+
+/* Menu Section */
+
+.menu-option{
+    display: flex;
+    margin-left: 46px;
+    margin-right: 46px;
+    margin-top: 45px;  
+}
+
+.emoji{
+    font-size: 70px;
+}
+
+.meal{
+    margin-left: 31px;      
+}
+
+.border{
+    border-bottom: 1px solid rgb(210, 210, 210);
+    width: 504px;
+    margin-left: 50px; 
+}
+
+.meal-name{
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    line-height: 16.8px;
+    margin-bottom: 9px;
+}
+
+.ingredients{
+    margin-top: 0px;
+    color: rgb(139, 139, 139);
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+/* Checkout Section */
+
+.price{
+    margin-top: 8px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.checkout{
+    display: block;
+    margin: auto;
+    margin-right: 46px;
+    margin-left: 46px;
+    margin-top: 45px;
+}
+
+.checkout-title{
+    text-align: center;
+    font-size: 28px;
+    line-height: 16.8px;
+    margin-bottom: 64px;
+}
+.cart, .total-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 28px;
+    line-height: 16.8px;
+}
+
+.total-price{
+    color: rgb(14, 14, 14);
+    line-height: 24px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.total-amount{
+    color: rgb(14, 14, 14);
+}
+
+.checkout-meal, .checkout-price{
+    margin-top: 0px;
+    margin-bottom: 22px;
+}
+
+.checkout-price, .total-amount{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.checkout-border{
+    border-bottom: 1px solid #393333;
+    width: 504px;
+    margin-top: 0px;
+    margin-bottom: 0px;  
+}
+
+/* Buttons */
+
+button{
+    cursor: pointer;
+}
+
+.add-to-card-btn{
+    margin: auto;
+    margin-right: 0px;
+    margin-top: 8px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    border: 1.5px solid #DEDEDE;
+    width: 50px;
+    height: 50px;
+    background: #FFFFFF;   
+}
+
+.remove-btn{
+    color: rgb(187, 187, 187);
+    font-family: "Arimo", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: inherit;
+    outline: none;
+    cursor: pointer;  
+}
+
+.remove-btn:focus, .add-to-card-btn:focus{
+    outline: none;
+}
+
+.complete-btn, .pay-btn{
+    margin-bottom: 53px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background: rgb(22, 219, 153);
+    width: 504px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.pay-btn{
+    width: 475px;
+    margin-top: 22px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 31.12px;
+    padding: 17px 211px 14px 210px;
+}
+
+/* Payment Section*/
+
+.payment{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: "Arimo", sans-serif;
+    width: 525px;
+    height: 500px;
+    padding-left: 24px;
+    padding-top: 48px;
+    box-sizing: border-box;
+    border-radius: 3.89px;
+    background: rgb(255, 255, 255);
+}
+
+.payment-header{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.12px;
+    letter-spacing: 0%;
+    margin-left: 108px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+    box-sizing: border-box;
+    border: 1.3px solid rgb(117, 117, 117);
+    border-radius: 3.89px;
+    padding: 17px 230px 14px 27px;
+    margin-bottom: 24px;
+    color: rgb(117, 117, 117);
+    font-family: "Arimo", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31.12px;
+}
+
+/* After Pay submit */
+.bottom-message{
+    margin-left: 50px;
+}
+.message{
+    margin-top: 45px;
+    background: #ECFDF5;
+    text-align: center;
+    color: rgb(6, 95, 70);
+    font-family: "Smythe",sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 16.8px;
+    padding: 50px 0;
+    width: 504px;
+}
+
+

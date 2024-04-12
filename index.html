@@ -1,0 +1,55 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400..700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="container" id="container">
+            <header class="header">
+                <div class="title">
+                    <h1 class="main-title">Jimmy's Diner</h1>
+                    <p class="sub-title">The best burgers and pizzas in town</p>
+                </div>
+            </header>
+            <main id="main">
+            </main> 
+            <div class="payment" id="payment">
+                <h2 class="payment-header">Enter your card details</h2>
+                <form id="payment-form">
+                    <div>
+                        <input
+                                required
+                                class="inputs"
+                                type="text" 
+                                name="fullName" 
+                                placeholder="Enter your name" 
+                                >
+                        <input
+                                required 
+                                class="inputs" 
+                                type="text" 
+                                name="cardNumber" 
+                                placeholder="Enter card number" 
+                                pattern="[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}"
+                                >
+                        <input 
+                                required
+                                class="inputs" 
+                                type="text"
+                                name="CVV" 
+                                placeholder="Enter CVV"
+                                pattern="[0-9]{3}"
+                                >
+                    </div>
+                    <div>
+                        <button class="pay-btn" id="pay-btn" type="submit" >Pay</button>
+                    </div>
+                </form>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
