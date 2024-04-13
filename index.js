@@ -71,7 +71,8 @@ function renderMeals(){
 }
 
 function handleRemoveBtn(itemId){
-    targetMenuObj = targetMenuObj.filter(menu => menu.id != itemId 
+    targetMenuObj = targetMenuObj = targetMenuObj.filter(menu => targetMenuObj.splice(targetMenuObj.indexOf(menu), 1
+    ) 
     )
     
     if(targetMenuObj.length === 0) {
